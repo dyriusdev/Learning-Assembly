@@ -1,6 +1,6 @@
 # Learning-Assembly
 
-# Assembly 64bit registers
+## Assembly 64bit registers
 <table>
     <tr>
         <th>Name</th>
@@ -46,5 +46,49 @@
         <th>r7</th>
         <th>rdi</th>
         <th>destiny index of commands of string manipulations</th>
+    </tr>
+</table>
+
+## System calll mmap
+<table>
+    <tr>
+        <th>Register</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <th>rax</th>
+        <th>9</th>
+        <th>System call indentifier</th>
+    </tr>
+    <tr>
+        <th>rdi</th>
+        <th>addr</th>
+        <th>OS page mapping</th>
+    </tr>
+    <tr>
+        <th>rsi</th>
+        <th>len</th>
+        <th>region size</th>
+    </tr>
+    <tr>
+        <th>rdx</th>
+        <th>prot</th>
+        <th>protection flag (read, write, execute)</th>
+    </tr>
+    <tr>
+        <th>r10</th>
+        <th>flags</th>
+        <th>utils flags (shared or private, anonymous page, etc...)</th>
+    </tr>
+    <tr>
+        <th>r8</th>
+        <th>fd</th>
+        <th>optinal descriptor of an mapped file</th>
+    </tr>
+    <tr>
+        <th>r9</th>
+        <th>offset</th>
+        <th>file offset</th>
     </tr>
 </table>
